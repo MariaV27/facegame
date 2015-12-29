@@ -1,26 +1,29 @@
-var timer;
-var secondcount = 20;
+var counter = 0;
 
+//start button to begin setTimeout
+var start = document.getElementById("starter");
+start.addEventListener("click", countdown);
+
+
+//timer function, expires at 20 seconds and reports total of counter function
 function countdown() {
   start.setAttribute("class", "hidden");
-  setTimeout(function()
-  {
-    alert("Time's up! You clicked" + count+ "HEY ARNOLD FACES!");
-  }, 20000);
-  starttime();
-}
+  setTimeout(function countandgive()
+    { 
+    alert("Time is up, you clicked " +counter+ " SNL Faces!");
+     
+     }, 20000);
 
-function addEvents(){
-  for(var i = 0; i   < document.getElementsByClassName("face").length; i++){
-    document.getElementsByClassName("face")[i].addEventlistenet("click", counter)
-  }
-}
-// Will add clicks to each image
+var images = document.getElementsByTagName("img");
+for (i = 0; i < images.length; i++) {
+  images[i].addEventListener("click", function() {
+    if (this.getAttribute("data-state") === "on") {
+    counter += 1;
+    this.setAttribute("data-state", "off");
+   } else {
+    console.log("no count");
+   }
+   
+  });
 
-
-document.getElementById("start").addEventlistener("click", start);
-//click event for the start button
-
-function startTimer(){
-  secondsleft = 20
 }

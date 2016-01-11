@@ -1,3 +1,13 @@
+$(document).ready(function() {
+alert("test");
+
+});
+
+
+
+/* Javascript below not working properly, added jQuery to do all the functionality 
+much easier. 
+
 var counter = 0;
 
 //start button to begin setTimeout
@@ -26,4 +36,4 @@ for (i = 0; i < images.length; i++) {
    
   });
 
-}
+}*/

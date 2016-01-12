@@ -1,13 +1,21 @@
+
+/* This is not doing anything
 header {
   background: url(https://playingwithpolitics.files.wordpress.com/2010/08/pigeon-man.png);
   width: fill; 
   height: fill;
   background-color: yellow
-}
+} */
 
 body {
   background-color: #66FF99
 
+}
+
+.well {
+  background: black;
+
+  color: red;
 }
 
 #facegrid{

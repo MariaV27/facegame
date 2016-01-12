@@ -3,7 +3,18 @@ alert("test");
 
 });
 
+var counter = 0;
+function countClick() {
+  counter = counter + 1;
+  }
 
+
+function beginTimer() {
+  setTimeout(function() { 
+    document.getElementById("results").innerHTML = ("You clicked " + counter + " Faces!");
+     }, 10000);
+
+}
 
 /* Javascript below not working properly, added jQuery to do all the functionality 
 much easier. 
